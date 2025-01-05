@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="description" content="Ian Martins - Data, Cloud & Analytics Enthusiast" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home - Ian Martins</title>
+  <title>Ian Martins | Home</title>
   <style>
     /* RESET & BASE */
     * {
@@ -13,51 +13,61 @@
       box-sizing: border-box;
     }
 
+    /* BODY BACKGROUND: BLUE GRADIENT */
     body {
       font-family: "Trebuchet MS", sans-serif;
-      background: linear-gradient(to right, #0D5BDD, #4BA5FF); /* Gradient */
-      color: #000; /* Default text color */
+      background: linear-gradient(to right, #0D5BDD, #4BA5FF);
+      color: #000;
+      min-height: 100vh; /* Ensure full-height gradient */
     }
 
-    /* HEADER LAYOUT: NAV LEFT, NAME RIGHT */
+    /* HEADER WITH A SUBTLE FADE INTO BODY */
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      position: relative; /* Allows pseudo-element for gradient fade */
+      background: #000;   /* Solid black header */
       padding: 1rem;
-      /* No solid background -> we see the gradient behind it */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    /* Fades the bottom edge of the black header into the blue body */
+    header::after {
+      content: "";
+      position: absolute;
+      left: 0; right: 0;
+      bottom: -10px;       /* Extend 10px below header */
+      height: 10px;        /* Fade height */
+      background: linear-gradient(to bottom, #000 0%, transparent 100%);
     }
 
-    /* NAV MENU ON LEFT */
+    /* NAME ON LEFT, BIGGER LETTERS */
+    .site-title {
+      font-size: 2.5rem;  /* Bigger text for your name */
+      color: #fff;        /* White text */
+    }
+
+    /* NAV MENU ON RIGHT */
     nav ul {
       list-style: none;
       display: flex;
       gap: 1rem;
-      font-size: 0.9rem; /* Smaller font for the nav */
+      font-size: 0.8rem;  /* Smaller font for the menu */
     }
     nav a {
       text-decoration: none;
       color: #fff;              /* White text by default */
       padding: 0.5rem 0.75rem;
       border-radius: 4px;
+      transition: background 0.3s, color 0.3s;
     }
-    /* HOVER / ACTIVE -> Blue BG, White text */
+    /* HOVER / ACTIVE -> BLUE BACKGROUND, WHITE TEXT */
     nav a:hover,
     nav a.active {
       background-color: #0D5BDD;
       color: #fff;
     }
 
-    /* NAME ON RIGHT, BIGGER LETTERS */
-    .site-title {
-      text-align: right; /* Align text to the right side */
-    }
-    .site-title h1 {
-      font-size: 2rem;  /* Larger font size for your name */
-      color: #fff;      /* White or you can choose #0D5BDD if you prefer */
-    }
-
-    /* WHITE CONTENT BOX */
+    /* WHITE CONTAINER FOR PAGE CONTENT */
     .container {
       max-width: 800px;
       margin: 2rem auto;
@@ -67,39 +77,39 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.15);
     }
 
-    /* PAGE HEADING */
+    /* PAGE TITLE INSIDE THE WHITE BOX */
     h1.page-title {
       margin-bottom: 1rem;
-      color: #0D5BDD; /* Use brand blue for main heading in content */
+      color: #0D5BDD; /* Brand blue for heading */
     }
 
     p {
       line-height: 1.6;
       margin-bottom: 1rem;
     }
+
   </style>
 </head>
 
 <body>
-  <!-- HEADER -->
+  <!-- HEADER (Black) -->
   <header>
+    <!-- Your Name on the Left -->
+    <div class="site-title">Ian Martins</div>
+
+    <!-- Navigation Menu on the Right -->
     <nav>
       <ul>
-        <!-- Active link on Home -->
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="toolbox.html">My Toolbox</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">My Toolbox</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
-
-    <div class="site-title">
-      <h1>Ian Martins</h1>
-    </div>
   </header>
 
-  <!-- MAIN CONTENT -->
+  <!-- MAIN CONTENT (White Box) -->
   <div class="container">
     <h1 class="page-title">Welcome to My Website</h1>
     <p>
@@ -107,8 +117,8 @@
       architecture, and turning complex data challenges into elegant solutions.
     </p>
     <p>
-      Navigate through the links on the left to learn more about my background, 
-      favorite tools, projects, and how to get in touch.
+      Explore the links above to learn more about my background, favorite tools, 
+      projects, and how to get in touch.
     </p>
   </div>
 </body>
