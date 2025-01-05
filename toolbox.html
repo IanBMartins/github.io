@@ -2,61 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Toolbox - Ian Martins" />
+  <meta name="description" content="My Toolbox - Ian Martins" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Toolbox - Ian Martins</title>
   <style>
+    /* RESET & BASE */
     * {
-      margin: 0; 
-      padding: 0; 
+      margin: 0;
+      padding: 0;
       box-sizing: border-box;
     }
+
     body {
-      font-family: Arial, sans-serif;
-      background: #f0f0f0;
+      font-family: "Trebuchet MS", sans-serif;
+      background: linear-gradient(to right, #0D5BDD, #4BA5FF);
+      color: #000;
+      min-height: 100vh;
     }
+
+    /* HEADER (90% BLACK) */
     header {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 1rem;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      background-color: #000; 
-      padding: 0.5rem 1rem;
-      min-height: 60px;
+      justify-content: space-between;
     }
+
+    /* NAME ON LEFT */
+    .site-title {
+      font-size: 2.5rem;
+      color: #fff;
+    }
+
+    /* NAV RIGHT */
     nav ul {
       list-style: none;
       display: flex;
       gap: 1rem;
+      font-size: 0.8rem;
     }
     nav a {
       text-decoration: none;
       color: #fff;
       padding: 0.5rem 0.75rem;
       border-radius: 4px;
+      transition: background 0.3s, color 0.3s;
     }
     nav a:hover,
     nav a.active {
-      background-color: #0D5BDD; 
-      color: #000;
-    }
-    .site-title h1 {
-      color: #0D5BDD;
-      font-size: 1.3rem;
-      margin-bottom: 0.2rem;
-    }
-    .site-title h2 {
+      background-color: #0D5BDD;
       color: #fff;
-      font-size: 0.9rem;
     }
-    main {
+
+    /* WHITE CONTENT BOX */
+    .container {
       max-width: 800px;
       margin: 2rem auto;
       background: #fff;
       padding: 2rem;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
     }
-    h1 {
+
+    h1.page-title {
       margin-bottom: 1rem;
       color: #0D5BDD;
     }
@@ -64,7 +73,8 @@
       line-height: 1.6;
       margin-bottom: 1rem;
     }
-    /* Example styling for a grid of tools */
+
+    /* GRID OF TOOLS (Optional) */
     .tools-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -81,30 +91,25 @@
 </head>
 <body>
   <header>
+    <div class="site-title">Ian Martins</div>
+
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <!-- Active link on Toolbox -->
         <li><a href="toolbox.html" class="active">My Toolbox</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-
-    <div class="site-title">
-      <h1>Ian Martins</h1>
-      <h2>Data, Cloud &amp; Analytics Enthusiast</h2>
-    </div>
   </header>
 
-  <main>
-    <h1>My Toolbox</h1>
+  <div class="container">
+    <h1 class="page-title">My Toolbox</h1>
     <p>
-      Over the years, I’ve worked with various data &amp; cloud tools. 
-      Here are some of my favorites:
+      Over the years, I’ve worked with a variety of data &amp; cloud tools. 
+      Here are some that I currently enjoy using:
     </p>
-    <!-- Example grid of tools -->
     <div class="tools-grid">
       <div class="tool-card">
         <strong>Azure</strong>
@@ -119,13 +124,12 @@
         <strong>Python</strong>
       </div>
       <div class="tool-card">
-        <strong>SQL &amp; Data Modeling</strong>
+        <strong>SQL &amp; Modeling</strong>
       </div>
       <div class="tool-card">
         <strong>Power BI</strong>
       </div>
-      <!-- Add more as needed -->
     </div>
-  </main>
+  </div>
 </body>
 </html>
