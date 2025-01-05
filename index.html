@@ -2,170 +2,224 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Official resume page of Ian Martins - Data Engineer & Cloud Architect" />
+  <meta name="description" content="Ian Martins' data portfolio - a fun one-page website" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ian Martins | Data Engineer & Cloud Architect</title>
+  <title>Ian Martins | Data Enthusiast</title>
   <style>
-    /* Basic CSS reset and styling */
-    body {
-      font-family: Arial, sans-serif;
+    /* Basic Reset & Layout */
+    * {
       margin: 0; 
-      padding: 0;
-      background: #f8f9fa; 
-      color: #333;
+      padding: 0; 
+      box-sizing: border-box;
     }
-    header, footer {
-      background: #2e3e4e; 
-      color: #fff; 
-      text-align: center; 
-      padding: 1rem 0;
+
+    body {
+      font-family: "Trebuchet MS", sans-serif;
+      background: linear-gradient(to right, #74ebd5, #acb6e5); /* Fun gradient */
+      color: #2e2e2e;
     }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 1rem;
-      background: #fff;
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: rgba(255, 255, 255, 0.7);
     }
-    h1, h2, h3 {
-      margin-top: 1rem;
+
+    header h1 {
+      font-size: 2.5rem;
       margin-bottom: 0.5rem;
       color: #2e3e4e;
     }
-    ul {
-      margin: 0;
-      padding-left: 1.2rem;
+
+    header h2 {
+      font-size: 1.25rem;
+      color: #555;
+      margin-bottom: 1rem;
     }
-    .section {
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+      color: #2e3e4e;
+      font-weight: bold;
+    }
+
+    /* Section Container */
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    }
+
+    section {
       margin-bottom: 2rem;
     }
-    .section h2 {
-      border-bottom: 2px solid #2e3e4e;
-      padding-bottom: 0.3rem;
+
+    section h2 {
+      margin-bottom: 1rem;
+      color: #2e3e4e;
+      position: relative;
     }
-    .job-title {
-      font-weight: bold;
-      font-size: 1rem;
-      margin-top: 0.5rem;
+
+    /* Little decorative underline */
+    section h2::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: #74ebd5;
+      margin: 0.5rem 0;
     }
-    .job-duration {
-      font-style: italic;
-      font-size: 0.9rem;
-      color: #555;
+
+    p, li {
+      margin-bottom: 0.75rem;
+      line-height: 1.5;
+    }
+
+    /* Card-like section for Tools/Technologies */
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 1rem;
+    }
+
+    .tech-card {
+      background: #f0f0f0;
+      border-radius: 5px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .tech-card img {
+      max-width: 40px;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.7);
     }
   </style>
 </head>
+
 <body>
+  <!-- Header -->
   <header>
     <h1>Ian Martins</h1>
-    <p>Senior Data Engineer &amp; Cloud Architect</p>
+    <h2>Data, Cloud & Analytics Enthusiast</h2>
+    <nav>
+      <a href="#about">About</a> |
+      <a href="#toolbox">My Toolbox</a> |
+      <a href="#projects">Projects</a> |
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
+  <!-- Main Container -->
   <div class="container">
-    <!-- Professional Summary -->
-    <section class="section">
-      <h2>Professional Summary</h2>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
       <p>
-        Senior Data Engineer &amp; Cloud Architect with 10+ years of experience designing and delivering 
-        enterprise-scale solutions, specializing in data architecture, real-time streaming, and modern 
-        data platforms. Proven track record in architecting scalable systems, automating complex data pipelines,
-        and building robust data models to drive actionable insights for diverse business domains. 
-        Recognized for expertise in Spark, Databricks, and cloud technologies, empowering organizations 
-        with impactful data strategies.
+        Hi there! I’m Ian Martins, a passionate data engineer & cloud architect 
+        who loves designing modern data platforms with a splash of creativity. 
+        From streaming pipelines to machine learning experiments, 
+        I enjoy turning complex data challenges into elegant solutions.
+      </p>
+      <p>
+        Outside of coding, you might find me experimenting with new 
+        coffee brewing methods, gaming, or exploring the latest tech trends.
       </p>
     </section>
 
-    <!-- Skills -->
-    <section class="section">
-      <h2>Skills</h2>
+    <!-- Toolbox Section -->
+    <section id="toolbox">
+      <h2>My Toolbox</h2>
+      <p>
+        Over the years, I’ve picked up a wide range of data & cloud technologies. 
+        Here are a few of my favorites:
+      </p>
+      <div class="tech-grid">
+        <!-- Repeat .tech-card for each tool -->
+        <div class="tech-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="AWS logo" />
+          <p><strong>AWS</strong></p>
+        </div>
+        <div class="tech-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="Azure logo" />
+          <p><strong>Azure</strong></p>
+        </div>
+        <div class="tech-card">
+          <img src="https://cdn.iconscout.com/icon/free/png-256/snowflake-2330528-1950427.png" alt="Snowflake logo" />
+          <p><strong>Snowflake</strong></p>
+        </div>
+        <div class="tech-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732205.png" alt="SQL logo" />
+          <p><strong>SQL & Modeling</strong></p>
+        </div>
+        <div class="tech-card">
+          <img src="https://cdn-icons.flaticon.com/png/512/3309/premium/3309192.png?token=exp=1679246122~hmac=0e1c12f386b126e52b0166f1dc99f15e" alt="Python logo" />
+          <p><strong>Python</strong></p>
+        </div>
+        <div class="tech-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="Power BI / Visualization" />
+          <p><strong>Power BI & Viz</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <p>
+        I love working on data initiatives that help businesses unlock 
+        powerful insights. Below are a few highlights:
+      </p>
       <ul>
-        <li>Solution Architecture &amp; Data Modeling</li>
-        <li>Azure Cloud Architecture (ADF, ADB, ADLS, DevOps)</li>
-        <li>AWS Architecture</li>
-        <li>Delta Lake, Parquet, Avro</li>
-        <li>ETL/ELT Processes (Apache Spark, Airflow, Python, SQL, R, DAX, M)</li>
-        <li>Microsoft Fabric</li>
-        <li>Data Analytics Tools (Power BI, Tableau, SACP, Cognos)</li>
-        <li>Machine Learning</li>
-        <li>Data Cleaning and Governance</li>
-        <li>Leadership &amp; Mentorship</li>
-        <li>Strategic Thinking &amp; Vision</li>
-        <li>Problem Solving &amp; Critical Thinking</li>
-        <li>Rapid Learning &amp; Adaptability</li>
-        <li>Communication &amp; Collaboration</li>
-        <li>Project Management</li>
-        <li>Continuous Improvement &amp; Innovation</li>
+        <li>
+          <strong>Real-Time IoT Analytics:</strong> Built a streaming pipeline 
+          on AWS Kinesis and AWS Lambda to process sensor data from 
+          100k+ devices in real time, enabling instant anomaly detection.
+        </li>
+        <li>
+          <strong>Modern Data Warehouse:</strong> Migrated on-prem data 
+          solutions to Snowflake on Azure, cutting query times by 80% 
+          and simplifying data governance across departments.
+        </li>
+        <li>
+          <strong>Sales Forecasting ML:</strong> Developed a forecasting model 
+          in Python using Prophet & scikit-learn, integrated with Power BI 
+          dashboards for dynamic scenario planning.
+        </li>
       </ul>
     </section>
 
-    <!-- Professional Experience -->
-    <section class="section">
-      <h2>Professional Experience</h2>
-
-      <h3>Suncor Energy</h3>
-      <div class="job-title">Lead Data Specialist (Cloud &amp; Data Architecture)</div>
-      <div class="job-duration">July 2017 – Present</div>
-      <ul>
-        <li>
-          <strong>Cloud &amp; Data Architecture:</strong> Spearheaded end-to-end design of an enterprise-scale 
-          data ecosystem leveraging Azure (Data Factory, Databricks, Synapse, ADLS, Logic Apps, SQL Server) 
-          and Power BI. Established medallion frameworks to automate ingestion, cleansing, transformation, 
-          and SCD handling. 
-        </li>
-        <li>
-          <strong>ETL/ELT &amp; Advanced Analytics:</strong> Built robust data pipelines with ADF 
-          and Databricks, integrating structured and semi-structured data from SAP Hana, SAP Datasphere. 
-          Specialized in Apache Spark, PySpark, Python, SQL, R. Pioneered machine learning initiatives 
-          for financial forecasting.
-        </li>
-        <li>
-          <strong>SAP Analytics Cloud Implementation:</strong> Developed Suncor’s primary financial 
-          forecasting model in SAP Analytics Cloud, used by 800+ users for revenue, expense, tax, and M&A 
-          simulations. 
-        </li>
-        <li>
-          <strong>Leadership &amp; Talent Development:</strong> Managed and mentored cross-functional teams 
-          of 10+ data engineers. Founded “Power BI Café” to foster collaboration and upskill BI teams.
-        </li>
-        <li>
-          <strong>Strategic Impact &amp; Problem Solving:</strong> Resolved complex data issues in weeks, 
-          unlocking advanced analytics capabilities. Developed intake management tool using SharePoint, 
-          Power Apps, Power Automate.
-        </li>
-        <li>
-          <strong>Governance &amp; Efficiency:</strong> Introduced data governance processes to ensure 
-          accuracy and compliance. Achieved an 80% reduction in manual processes. Received the CFO Award (2022).
-        </li>
-      </ul>
-    </section>
-
-    <!-- Education -->
-    <section class="section">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>Athabasca University</strong>, Bachelor’s in Commerce (Finance) (2021-2024)</li>
-        <li><strong>SAIT</strong>, Accounting Diploma (2018-2020)</li>
-        <li><strong>University of Sao Paulo</strong>, Business Administration (Technology Management Focus)</li>
-      </ul>
-    </section>
-
-    <!-- Certifications -->
-    <section class="section">
-      <h2>Certifications</h2>
-      <ul>
-        <li>Azure Fundamentals</li>
-        <li>Azure Data Engineer Associate</li>
-        <li>AWS Cloud Practitioner</li>
-        <li>CREWES Data Science</li>
-        <li>Snowflake Data Warehouse</li>
-        <li>Python Bootcamp</li>
-        <li>Data Science with R</li>
-        <li>R Programmer</li>
-      </ul>
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Get in Touch</h2>
+      <p>
+        Interested in collaborating or just want to chat about data?
+        Feel free to reach out through my 
+        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/">LinkedIn</a> 
+        or drop me an email:
+        <a href="mailto:your.email@example.com">your.email@example.com</a>.
+      </p>
     </section>
   </div>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Ian Martins. All Rights Reserved.</p>
+    <p>© 2025 Ian Martins • Built with fun & data magic.</p>
   </footer>
 </body>
 </html>
