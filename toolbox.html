@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Toolbox - Ian Martins" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Toolbox - Ian Martins</title>
+  <style>
+    * {
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #000; 
+      padding: 0.5rem 1rem;
+      min-height: 60px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      padding: 0.5rem 0.75rem;
+      border-radius: 4px;
+    }
+    nav a:hover,
+    nav a.active {
+      background-color: #0D5BDD; 
+      color: #000;
+    }
+    .site-title h1 {
+      color: #0D5BDD;
+      font-size: 1.3rem;
+      margin-bottom: 0.2rem;
+    }
+    .site-title h2 {
+      color: #fff;
+      font-size: 0.9rem;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin-bottom: 1rem;
+      color: #0D5BDD;
+    }
+    p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    /* Example styling for a grid of tools */
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 1rem;
+    }
+    .tool-card {
+      background: #f7f7f7;
+      border-radius: 4px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <!-- Active link on Toolbox -->
+        <li><a href="toolbox.html" class="active">My Toolbox</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="site-title">
+      <h1>Ian Martins</h1>
+      <h2>Data, Cloud &amp; Analytics Enthusiast</h2>
+    </div>
+  </header>
+
+  <main>
+    <h1>My Toolbox</h1>
+    <p>
+      Over the years, I’ve worked with various data &amp; cloud tools. 
+      Here are some of my favorites:
+    </p>
+    <!-- Example grid of tools -->
+    <div class="tools-grid">
+      <div class="tool-card">
+        <strong>Azure</strong>
+      </div>
+      <div class="tool-card">
+        <strong>AWS</strong>
+      </div>
+      <div class="tool-card">
+        <strong>Snowflake</strong>
+      </div>
+      <div class="tool-card">
+        <strong>Python</strong>
+      </div>
+      <div class="tool-card">
+        <strong>SQL &amp; Data Modeling</strong>
+      </div>
+      <div class="tool-card">
+        <strong>Power BI</strong>
+      </div>
+      <!-- Add more as needed -->
+    </div>
+  </main>
+</body>
+</html>
