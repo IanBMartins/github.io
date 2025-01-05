@@ -2,235 +2,114 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Ian Martins' data portfolio - fun one-page website" />
+  <meta name="description" content="Ian Martins - Data, Cloud & Analytics Enthusiast" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ian Martins | Data & Cloud Enthusiast</title>
+  <title>Home - Ian Martins</title>
   <style>
-    /* 
-      -- BRAND COLOR PALETTE --
-      Primary Color: #0D5BDD
-      We'll use a lighter blue to create a gradient effect:
-    */
-
-    /* Reset & Base Styles */
+    /* Reset & Base */
     * {
       margin: 0; 
       padding: 0; 
       box-sizing: border-box;
     }
-
     body {
-      /* 
-        Subtle gradient using the primary color (left) 
-        and a lighter shade or complementary tone (right).
-      */
-      background: linear-gradient(to right, #0D5BDD, #4BA5FF);
-      font-family: "Trebuchet MS", sans-serif;
-      color: #000; /* Black text */
+      font-family: Arial, sans-serif;
+      background: #f0f0f0; /* Light gray background */
     }
 
+    /* Header: Flex layout -> nav on left, name on right */
     header {
-      text-align: center;
-      padding: 2rem 1rem;
-      background: rgba(255, 255, 255, 0.8);
-      /* Slightly translucent white block so the gradient peeks through */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #000; /* Black header */
+      padding: 0.5rem 1rem;
+      min-height: 60px; /* Smaller header */
     }
 
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-      color: #0D5BDD; /* Use brand color for heading */
-    }
-
-    header h2 {
-      font-size: 1.25rem;
-      color: #333;
-      margin-bottom: 1rem;
-    }
-
-    nav {
-      margin-top: 1rem;
-    }
-
-    nav a {
-      margin: 0 0.75rem;
-      text-decoration: none;
-      color: #0D5BDD;
-      font-weight: bold;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 2rem auto;
-      background: #fff; /* White container for contrast */
-      border-radius: 8px;
-      padding: 2rem;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    }
-
-    section {
-      margin-bottom: 2rem;
-    }
-
-    section h2 {
-      margin-bottom: 1rem;
-      color: #0D5BDD; /* Brand color for subheadings */
-      position: relative;
-    }
-    /* Decorative underline using primary color */
-    section h2::after {
-      content: "";
-      display: block;
-      width: 50px;
-      height: 3px;
-      background: #0D5BDD;
-      margin: 0.5rem 0;
-    }
-
-    p, li {
-      margin-bottom: 0.75rem;
-      line-height: 1.5;
-    }
-
-    /* "Tech Toolbox" Grid */
-    .tech-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    /* Navigation (left side) */
+    nav ul {
+      list-style: none;
+      display: flex;
       gap: 1rem;
     }
-
-    .tech-card {
-      background: #f7f7f7;
-      border-radius: 5px;
-      padding: 1rem;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    nav a {
+      text-decoration: none;
+      color: #fff; /* White text by default */
+      padding: 0.5rem 0.75rem;
+      border-radius: 4px;
+    }
+    /* Hover or active link -> background blue, text black */
+    nav a:hover,
+    nav a.active {
+      background-color: #0D5BDD; 
+      color: #000;
     }
 
-    .tech-card img {
-      max-width: 40px;
-      margin-bottom: 0.5rem;
+    /* Right side: name in blue, subtitle in white */
+    .site-title h1 {
+      color: #0D5BDD; /* Brand blue for name */
+      font-size: 1.3rem;
+      margin-bottom: 0.2rem;
+    }
+    .site-title h2 {
+      color: #fff; /* White subtitle */
+      font-size: 0.9rem;
     }
 
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #0D5BDD; /* Brand color for footer */
-      color: #fff;         /* White text in footer */
-      margin-top: 2rem;
+    /* Main content */
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin-bottom: 1rem;
+      color: #0D5BDD;
+    }
+    p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
     }
   </style>
 </head>
 
 <body>
+
   <!-- HEADER -->
   <header>
-    <h1>Ian Martins</h1>
-    <h2>Data, Cloud & Analytics Enthusiast</h2>
     <nav>
-      <a href="#about">About</a> |
-      <a href="#toolbox">My Toolbox</a> |
-      <a href="#projects">Projects</a> |
-      <a href="#contact">Contact</a>
+      <ul>
+        <!-- Active link on Home -->
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="toolbox.html">My Toolbox</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
+
+    <div class="site-title">
+      <h1>Ian Martins</h1>
+      <h2>Data, Cloud &amp; Analytics Enthusiast</h2>
+    </div>
   </header>
 
   <!-- MAIN CONTENT -->
-  <div class="container">
-    <!-- About Section -->
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Hey there! I’m Ian Martins, a passionate data engineer &amp; cloud architect 
-        who loves building modern data platforms with a splash of creativity. 
-        From real-time pipelines to advanced analytics, I enjoy tackling data 
-        challenges and turning them into actionable insights.
-      </p>
-      <p>
-        When I’m off the clock, you can find me exploring new coffee brews, 
-        gaming, or keeping up with the latest tech trends. 
-        Let’s just say data and caffeine go hand-in-hand in my world!
-      </p>
-    </section>
+  <main>
+    <h1>Welcome to My Website</h1>
+    <p>
+      This is the Home page, where I give a brief snapshot of who I am 
+      and what I do. Feel free to explore the other pages using the menu above!
+    </p>
+    <p>
+      I’m passionate about building modern data platforms, working with cutting-edge 
+      cloud technologies, and sharing knowledge with the tech community.
+    </p>
+  </main>
 
-    <!-- Toolbox Section -->
-    <section id="toolbox">
-      <h2>My Toolbox</h2>
-      <p>
-        Over the years, I've picked up a wide range of data & cloud technologies. 
-        Here are a few of my favorites:
-      </p>
-      <div class="tech-grid">
-        <!-- Repeat .tech-card for each tool -->
-        <div class="tech-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="AWS logo" />
-          <p><strong>AWS</strong></p>
-        </div>
-        <div class="tech-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="Azure logo" />
-          <p><strong>Azure</strong></p>
-        </div>
-        <div class="tech-card">
-          <img src="https://cdn.iconscout.com/icon/free/png-256/snowflake-2330528-1950427.png" alt="Snowflake logo" />
-          <p><strong>Snowflake</strong></p>
-        </div>
-        <div class="tech-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/732/732205.png" alt="SQL logo" />
-          <p><strong>SQL &amp; Modeling</strong></p>
-        </div>
-        <div class="tech-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python logo" />
-          <p><strong>Python</strong></p>
-        </div>
-        <div class="tech-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="Power BI / Visualization" />
-          <p><strong>Power BI &amp; Viz</strong></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2>Featured Projects</h2>
-      <p>
-        I love working on data initiatives that help businesses unlock 
-        powerful insights. Below are a few highlights:
-      </p>
-      <ul>
-        <li>
-          <strong>Real-Time IoT Analytics:</strong> Built a streaming pipeline 
-          on AWS Kinesis + Lambda to process sensor data from 100k+ devices, 
-          enabling real-time anomaly detection.
-        </li>
-        <li>
-          <strong>Modern Data Warehouse:</strong> Migrated on-prem systems 
-          to Snowflake on Azure, cutting query times by 80% and simplifying 
-          data governance across departments.
-        </li>
-        <li>
-          <strong>Sales Forecasting ML:</strong> Developed forecasting models 
-          in Python (Prophet & scikit-learn) with interactive Power BI dashboards 
-          for dynamic scenario planning.
-        </li>
-      </ul>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Get in Touch</h2>
-      <p>
-        Interested in collaborating or just want to talk data?
-        Feel free to reach out via 
-        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/">LinkedIn</a> 
-        or drop me an email:
-        <a href="mailto:your.email@example.com">your.email@example.com</a>.
-      </p>
-    </section>
-  </div>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Ian Martins • Created with data & a splash of creativity.</p>
-  </footer>
 </body>
 </html>
