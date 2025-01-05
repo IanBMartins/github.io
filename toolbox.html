@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="My Toolbox - Ian Martins" />
+  <meta name="description" content="Toolbox - Ian Martins" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Toolbox - Ian Martins</title>
+  <title>Ian Martins | Toolbox</title>
   <style>
     /* RESET & BASE */
     * {
-      margin: 0;
-      padding: 0;
+      margin: 0; 
+      padding: 0; 
       box-sizing: border-box;
     }
 
@@ -17,10 +17,9 @@
       font-family: "Trebuchet MS", sans-serif;
       background: linear-gradient(to right, #0D5BDD, #4BA5FF);
       color: #000;
-      min-height: 100vh;
+      min-height: 100vh; 
     }
 
-    /* HEADER (90% BLACK) */
     header {
       background: rgba(0, 0, 0, 0.9);
       padding: 1rem;
@@ -29,13 +28,11 @@
       justify-content: space-between;
     }
 
-    /* NAME ON LEFT */
     .site-title {
       font-size: 2.5rem;
       color: #fff;
     }
 
-    /* NAV RIGHT */
     nav ul {
       list-style: none;
       display: flex;
@@ -55,7 +52,6 @@
       color: #fff;
     }
 
-    /* WHITE CONTENT BOX */
     .container {
       max-width: 800px;
       margin: 2rem auto;
@@ -73,8 +69,6 @@
       line-height: 1.6;
       margin-bottom: 1rem;
     }
-
-    /* GRID OF TOOLS (Optional) */
     .tools-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -89,15 +83,16 @@
     }
   </style>
 </head>
+
 <body>
   <header>
     <div class="site-title">Ian Martins</div>
 
     <nav>
       <ul>
-        <li><a href="/" class="active">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="toolbox.html">My Toolbox</a></li>
+        <li><a href="toolbox.html" class="active">My Toolbox</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -129,6 +124,7 @@
       <div class="tool-card">
         <strong>Power BI</strong>
       </div>
+      <!-- Add more if needed -->
     </div>
   </div>
 </body>
