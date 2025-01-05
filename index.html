@@ -2,11 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Ian Martins' data portfolio - a fun one-page website" />
+  <meta name="description" content="Ian Martins' data portfolio - fun one-page website" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ian Martins | Data Enthusiast</title>
+  <title>Ian Martins | Data & Cloud Enthusiast</title>
   <style>
-    /* Basic Reset & Layout */
+    /* 
+      -- BRAND COLOR PALETTE --
+      Primary Color: #0D5BDD
+      We'll use a lighter blue to create a gradient effect:
+    */
+
+    /* Reset & Base Styles */
     * {
       margin: 0; 
       padding: 0; 
@@ -14,26 +20,31 @@
     }
 
     body {
+      /* 
+        Subtle gradient using the primary color (left) 
+        and a lighter shade or complementary tone (right).
+      */
+      background: linear-gradient(to right, #0D5BDD, #4BA5FF);
       font-family: "Trebuchet MS", sans-serif;
-      background: linear-gradient(to right, #74ebd5, #acb6e5); /* Fun gradient */
-      color: #2e2e2e;
+      color: #000; /* Black text */
     }
 
     header {
       text-align: center;
       padding: 2rem 1rem;
-      background: rgba(255, 255, 255, 0.7);
+      background: rgba(255, 255, 255, 0.8);
+      /* Slightly translucent white block so the gradient peeks through */
     }
 
     header h1 {
       font-size: 2.5rem;
       margin-bottom: 0.5rem;
-      color: #2e3e4e;
+      color: #0D5BDD; /* Use brand color for heading */
     }
 
     header h2 {
       font-size: 1.25rem;
-      color: #555;
+      color: #333;
       margin-bottom: 1rem;
     }
 
@@ -42,17 +53,16 @@
     }
 
     nav a {
-      margin: 0 0.5rem;
+      margin: 0 0.75rem;
       text-decoration: none;
-      color: #2e3e4e;
+      color: #0D5BDD;
       font-weight: bold;
     }
 
-    /* Section Container */
     .container {
       max-width: 800px;
       margin: 2rem auto;
-      background: rgba(255, 255, 255, 0.8);
+      background: #fff; /* White container for contrast */
       border-radius: 8px;
       padding: 2rem;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
@@ -64,17 +74,16 @@
 
     section h2 {
       margin-bottom: 1rem;
-      color: #2e3e4e;
+      color: #0D5BDD; /* Brand color for subheadings */
       position: relative;
     }
-
-    /* Little decorative underline */
+    /* Decorative underline using primary color */
     section h2::after {
       content: "";
       display: block;
       width: 50px;
       height: 3px;
-      background: #74ebd5;
+      background: #0D5BDD;
       margin: 0.5rem 0;
     }
 
@@ -83,7 +92,7 @@
       line-height: 1.5;
     }
 
-    /* Card-like section for Tools/Technologies */
+    /* "Tech Toolbox" Grid */
     .tech-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -91,7 +100,7 @@
     }
 
     .tech-card {
-      background: #f0f0f0;
+      background: #f7f7f7;
       border-radius: 5px;
       padding: 1rem;
       text-align: center;
@@ -103,17 +112,18 @@
       margin-bottom: 0.5rem;
     }
 
-    /* Footer */
     footer {
       text-align: center;
       padding: 1rem;
-      background: rgba(255, 255, 255, 0.7);
+      background: #0D5BDD; /* Brand color for footer */
+      color: #fff;         /* White text in footer */
+      margin-top: 2rem;
     }
   </style>
 </head>
 
 <body>
-  <!-- Header -->
+  <!-- HEADER -->
   <header>
     <h1>Ian Martins</h1>
     <h2>Data, Cloud & Analytics Enthusiast</h2>
@@ -125,20 +135,21 @@
     </nav>
   </header>
 
-  <!-- Main Container -->
+  <!-- MAIN CONTENT -->
   <div class="container">
     <!-- About Section -->
     <section id="about">
       <h2>About Me</h2>
       <p>
-        Hi there! I’m Ian Martins, a passionate data engineer & cloud architect 
-        who loves designing modern data platforms with a splash of creativity. 
-        From streaming pipelines to machine learning experiments, 
-        I enjoy turning complex data challenges into elegant solutions.
+        Hey there! I’m Ian Martins, a passionate data engineer &amp; cloud architect 
+        who loves building modern data platforms with a splash of creativity. 
+        From real-time pipelines to advanced analytics, I enjoy tackling data 
+        challenges and turning them into actionable insights.
       </p>
       <p>
-        Outside of coding, you might find me experimenting with new 
-        coffee brewing methods, gaming, or exploring the latest tech trends.
+        When I’m off the clock, you can find me exploring new coffee brews, 
+        gaming, or keeping up with the latest tech trends. 
+        Let’s just say data and caffeine go hand-in-hand in my world!
       </p>
     </section>
 
@@ -146,7 +157,7 @@
     <section id="toolbox">
       <h2>My Toolbox</h2>
       <p>
-        Over the years, I’ve picked up a wide range of data & cloud technologies. 
+        Over the years, I've picked up a wide range of data & cloud technologies. 
         Here are a few of my favorites:
       </p>
       <div class="tech-grid">
@@ -165,15 +176,15 @@
         </div>
         <div class="tech-card">
           <img src="https://cdn-icons-png.flaticon.com/512/732/732205.png" alt="SQL logo" />
-          <p><strong>SQL & Modeling</strong></p>
+          <p><strong>SQL &amp; Modeling</strong></p>
         </div>
         <div class="tech-card">
-          <img src="https://cdn-icons.flaticon.com/png/512/3309/premium/3309192.png?token=exp=1679246122~hmac=0e1c12f386b126e52b0166f1dc99f15e" alt="Python logo" />
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python logo" />
           <p><strong>Python</strong></p>
         </div>
         <div class="tech-card">
           <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="Power BI / Visualization" />
-          <p><strong>Power BI & Viz</strong></p>
+          <p><strong>Power BI &amp; Viz</strong></p>
         </div>
       </div>
     </section>
@@ -188,18 +199,18 @@
       <ul>
         <li>
           <strong>Real-Time IoT Analytics:</strong> Built a streaming pipeline 
-          on AWS Kinesis and AWS Lambda to process sensor data from 
-          100k+ devices in real time, enabling instant anomaly detection.
+          on AWS Kinesis + Lambda to process sensor data from 100k+ devices, 
+          enabling real-time anomaly detection.
         </li>
         <li>
-          <strong>Modern Data Warehouse:</strong> Migrated on-prem data 
-          solutions to Snowflake on Azure, cutting query times by 80% 
-          and simplifying data governance across departments.
+          <strong>Modern Data Warehouse:</strong> Migrated on-prem systems 
+          to Snowflake on Azure, cutting query times by 80% and simplifying 
+          data governance across departments.
         </li>
         <li>
-          <strong>Sales Forecasting ML:</strong> Developed a forecasting model 
-          in Python using Prophet & scikit-learn, integrated with Power BI 
-          dashboards for dynamic scenario planning.
+          <strong>Sales Forecasting ML:</strong> Developed forecasting models 
+          in Python (Prophet & scikit-learn) with interactive Power BI dashboards 
+          for dynamic scenario planning.
         </li>
       </ul>
     </section>
@@ -208,8 +219,8 @@
     <section id="contact">
       <h2>Get in Touch</h2>
       <p>
-        Interested in collaborating or just want to chat about data?
-        Feel free to reach out through my 
+        Interested in collaborating or just want to talk data?
+        Feel free to reach out via 
         <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/">LinkedIn</a> 
         or drop me an email:
         <a href="mailto:your.email@example.com">your.email@example.com</a>.
@@ -217,9 +228,9 @@
     </section>
   </div>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer>
-    <p>© 2025 Ian Martins • Built with fun & data magic.</p>
+    <p>© 2025 Ian Martins • Created with data & a splash of creativity.</p>
   </footer>
 </body>
 </html>
