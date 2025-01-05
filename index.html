@@ -21,23 +21,13 @@
       min-height: 100vh; /* Ensure full-height gradient */
     }
 
-    /* HEADER WITH A SUBTLE FADE INTO BODY */
+    /* HEADER (90% BLACK) */
     header {
-      position: relative; /* Allows pseudo-element for gradient fade */
-      background: #000;   /* Solid black header */
+      background: rgba(0, 0, 0, 0.9); /* 90% opaque black */
       padding: 1rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
-    }
-    /* Fades the bottom edge of the black header into the blue body */
-    header::after {
-      content: "";
-      position: absolute;
-      left: 0; right: 0;
-      bottom: -10px;       /* Extend 10px below header */
-      height: 10px;        /* Fade height */
-      background: linear-gradient(to bottom, #000 0%, transparent 100%);
     }
 
     /* NAME ON LEFT, BIGGER LETTERS */
@@ -46,7 +36,7 @@
       color: #fff;        /* White text */
     }
 
-    /* NAV MENU ON RIGHT */
+    /* NAV MENU ON THE RIGHT */
     nav ul {
       list-style: none;
       display: flex;
@@ -92,7 +82,7 @@
 </head>
 
 <body>
-  <!-- HEADER (Black) -->
+  <!-- HEADER -->
   <header>
     <!-- Your Name on the Left -->
     <div class="site-title">Ian Martins</div>
