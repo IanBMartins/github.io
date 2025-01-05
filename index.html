@@ -6,70 +6,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home - Ian Martins</title>
   <style>
-    /* Reset & Base */
+    /* RESET & BASE */
     * {
       margin: 0; 
       padding: 0; 
       box-sizing: border-box;
     }
+
     body {
-      font-family: Arial, sans-serif;
-      background: #f0f0f0; /* Light gray background */
+      font-family: "Trebuchet MS", sans-serif;
+      background: linear-gradient(to right, #0D5BDD, #4BA5FF); /* Gradient */
+      color: #000; /* Default text color */
     }
 
-    /* Header: Flex layout -> nav on left, name on right */
+    /* HEADER LAYOUT: NAV LEFT, NAME RIGHT */
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #000; /* Black header */
-      padding: 0.5rem 1rem;
-      min-height: 60px; /* Smaller header */
+      padding: 1rem;
+      /* No solid background -> we see the gradient behind it */
     }
 
-    /* Navigation (left side) */
+    /* NAV MENU ON LEFT */
     nav ul {
       list-style: none;
       display: flex;
       gap: 1rem;
+      font-size: 0.9rem; /* Smaller font for the nav */
     }
     nav a {
       text-decoration: none;
-      color: #fff; /* White text by default */
+      color: #fff;              /* White text by default */
       padding: 0.5rem 0.75rem;
       border-radius: 4px;
     }
-    /* Hover or active link -> background blue, text black */
+    /* HOVER / ACTIVE -> Blue BG, White text */
     nav a:hover,
     nav a.active {
-      background-color: #0D5BDD; 
-      color: #000;
+      background-color: #0D5BDD;
+      color: #fff;
     }
 
-    /* Right side: name in blue, subtitle in white */
+    /* NAME ON RIGHT, BIGGER LETTERS */
+    .site-title {
+      text-align: right; /* Align text to the right side */
+    }
     .site-title h1 {
-      color: #0D5BDD; /* Brand blue for name */
-      font-size: 1.3rem;
-      margin-bottom: 0.2rem;
-    }
-    .site-title h2 {
-      color: #fff; /* White subtitle */
-      font-size: 0.9rem;
+      font-size: 2rem;  /* Larger font size for your name */
+      color: #fff;      /* White or you can choose #0D5BDD if you prefer */
     }
 
-    /* Main content */
-    main {
+    /* WHITE CONTENT BOX */
+    .container {
       max-width: 800px;
       margin: 2rem auto;
       background: #fff;
       padding: 2rem;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
     }
-    h1 {
+
+    /* PAGE HEADING */
+    h1.page-title {
       margin-bottom: 1rem;
-      color: #0D5BDD;
+      color: #0D5BDD; /* Use brand blue for main heading in content */
     }
+
     p {
       line-height: 1.6;
       margin-bottom: 1rem;
@@ -78,7 +81,6 @@
 </head>
 
 <body>
-
   <!-- HEADER -->
   <header>
     <nav>
@@ -94,22 +96,20 @@
 
     <div class="site-title">
       <h1>Ian Martins</h1>
-      <h2>Data, Cloud &amp; Analytics Enthusiast</h2>
     </div>
   </header>
 
   <!-- MAIN CONTENT -->
-  <main>
-    <h1>Welcome to My Website</h1>
+  <div class="container">
+    <h1 class="page-title">Welcome to My Website</h1>
     <p>
-      This is the Home page, where I give a brief snapshot of who I am 
-      and what I do. Feel free to explore the other pages using the menu above!
+      This is the Home page. I’m passionate about data engineering, cloud 
+      architecture, and turning complex data challenges into elegant solutions.
     </p>
     <p>
-      I’m passionate about building modern data platforms, working with cutting-edge 
-      cloud technologies, and sharing knowledge with the tech community.
+      Navigate through the links on the left to learn more about my background, 
+      favorite tools, projects, and how to get in touch.
     </p>
-  </main>
-
+  </div>
 </body>
 </html>
