@@ -64,4 +64,53 @@
       background: #fff;
       padding: 2rem;
       border-radius: 8px;
-      box-
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    }
+
+    /* PAGE TITLE INSIDE THE WHITE BOX */
+    h1.page-title {
+      margin-bottom: 1rem;
+      color: #0D5BDD; /* Brand blue for heading */
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <!-- Your Name on the Left -->
+    <div class="site-title">Ian Martins</div>
+
+    <!-- Navigation Menu on the Right -->
+    <nav>
+      <ul>
+        <!-- Use root '/' for Home so it doesn't show index.html in the URL -->
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="toolbox.html">My Toolbox</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT (White Box) -->
+  <div class="container">
+    <h1 class="page-title">Welcome to My Website</h1>
+    <p>
+      This is the Home page. I’m passionate about data engineering, cloud 
+      architecture, and turning complex data challenges into elegant solutions.
+    </p>
+    <p>
+      Explore the links above to learn more about my background, favorite tools, 
+      projects, and how to get in touch.
+    </p>
+  </div>
+</body>
+</html>
