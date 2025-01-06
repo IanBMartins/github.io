@@ -105,6 +105,69 @@
       margin-bottom: 0.5rem;
       flex: 0 0 10%; /* Ensures the title takes up 10% of the card's height */
     }
+    /* TABS CONTAINER */
+    .tabs {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      justify-content: center; /* Center-align the tabs */
+    }
+
+    /* TAB BUTTONS */
+    .tab-button {
+      background: #f7f7f7;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+      color: #0D5BDD;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .tab-button:hover {
+      background: #0D5BDD;
+      color: #fff;
+    }
+    .tab-button.active {
+      background: #0D5BDD;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    /* TAB CONTENT */
+    .tab-content {
+      display: none; /* Hide all tabs by default */
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .tab-content.active {
+      display: block; /* Show the active tab */
+    }
+
+    /* TOOLS GRID */
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .tool-card {
+      background: #f7f7f7;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .tool-card img {
+      max-width: 60px;
+      margin-bottom: 0.5rem;
+    }
+    .tool-card p {
+      font-size: 0.8rem;
+      color: #333;
+    }
   </style>
 </head>
 <body>
