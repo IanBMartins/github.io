@@ -1,0 +1,79 @@
+<!-- _layouts/default.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <style>
+    /* Insert your shared CSS here, or link an external CSS file */
+    * {
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Trebuchet MS", sans-serif;
+      background: linear-gradient(to right, #0D5BDD, #4BA5FF);
+      color: #000;
+      min-height: 100vh;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .site-title-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .site-title {
+      font-size: 2.5rem;
+      color: #fff;
+      margin-bottom: 0.3rem; 
+    }
+    .site-subtitle {
+      font-size: 1rem;  
+      color: #ccc;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      font-size: 0.8rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      padding: 0.5rem 0.75rem;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: #0D5BDD;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    }
+    h1.page-title {
+      margin-bottom: 1rem;
+      color: #0D5BDD;
+    }
+  </style>
+</head>
+<body>
+  {% include header.html %}
+  
+  <div class="container">
+    <!-- The main content of each page goes here -->
+    {{ content }}
+  </div>
+</body>
+</html>
