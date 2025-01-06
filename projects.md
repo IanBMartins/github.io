@@ -3,6 +3,6 @@ layout: default
 title: "Projects"
 ---
 
-# My Toolbox
+# Projects
 
 Some text about my favorite tools...
