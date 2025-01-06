@@ -94,15 +94,16 @@
       align-items: center; /* Center content horizontally */
     }
     .project-card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 4px;
-      margin-bottom: 1rem;
+      max-width: 100%; /* Adjust width to fit the container */
+      max-height: 90%; /* Adjust height to fit the container */
+      object-fit: contain; /* Ensure the image keeps its aspect ratio and is fully visible */
+      flex: 0 0 90%; /* Ensures the image takes up 90% of the card's height */
     }
     .project-card p {
-      font-size: 0.5rem;
+      font-size: 0.8rem;
       color: #333;
+      margin-bottom: 0.5rem;
+      flex: 0 0 10%; /* Ensures the title takes up 10% of the card's height */
     }
   </style>
 </head>
