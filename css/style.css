@@ -627,8 +627,7 @@ ul.cat li a.active {
 .nopadding { padding: 0 }
 .box a { margin: 2px }
 .box .hover-bg {
-    position: relative;
-    overflow: hidden;
+    display:none
 }
 .box .hover-bg .hover-text {
     height: 100%;
@@ -1157,3 +1156,73 @@ ul.meta-tags li:last-child:after { content: ' ' }
 .comment form { margin-top: -30px }
 .comment input,
 .comment textarea { margin-bottom: 15px }
+
+/* My Works Section */
+
+/* Project Info Styling */
+.project-info {
+    padding: 15px;
+}
+
+.project-info h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-info h4 a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.project-info h4 a:hover {
+    color: #38A5DB;
+}
+
+.project-info p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Technology Icons Styling */
+.tech-icons {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.tech-icons i {
+    font-size: 20px; /* Adjust size as needed */
+    margin-right: 10px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.tech-icons i:hover {
+    color: #38A5DB; /* Change to desired hover color */
+}
+
+.tech-icons img {
+    width: 24px; /* Adjust as needed */
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+    transition: opacity 0.3s;
+}
+
+.tech-icons img:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .tech-icons i,
+    .tech-icons img {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+    }
+}

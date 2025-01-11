@@ -239,10 +239,9 @@
             <div class="text-center">
                 <ul class="list-inline cat"> <!-- Portfolio Filter Categories -->
                     <li><a href="#" data-filter="*" class="active">All</a></li>
-                    <li><a href="#" data-filter=".brand">Design</a></li>
-                    <li><a href="#" data-filter=".web">Web</a></li>
-                    <li><a href="#" data-filter=".apps">Apps</a></li>
-                    <li><a href="#" data-filter=".others">Others</a></li>
+                    <li><a href="#" data-filter=".engineering">Data Engineering</a></li>
+                    <li><a href="#" data-filter=".analytics">Data Analytics</a></li>
+                    <li><a href="#" data-filter=".machine">Machine Learning</a></li>
                 </ul><!-- End Portfolio Filter Categories -->
             </div>
 
@@ -251,68 +250,52 @@
         <div class="container-fluid"> <!-- fluid container -->
              <div id="itemsWork" class="row text-center"> <!-- Portfolio Wrapper Row -->
 
-                <!-- Example Portfolio Item #1 -->
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding brand"> <!-- Works #1 col 3 -->
+                <!-- Data Engineering Project Example -->
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 nopadding engineering">
                     <div class="box"> 
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="E-commerce Website Design" href="img/portfolio/project1.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/project1.jpg">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="https://github.com/ianmartins/ecommerce"><i class="fa fa-chain"></i></a> <!-- Updated href with your project link -->
-                            </div> 
-                            <img src="img/portfolio/01.jpg" class="img-responsive" alt="E-commerce Website Design"> <!-- Updated alt text -->
-                        </div>
-                    </div>
-                </div><!-- end Works #1 col 3 -->
-
-                <!-- Example Portfolio Item #2 -->
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding web"> <!-- Works #2 col 3 -->
-                    <div class="box">
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Real-Time Data Pipeline" href="img/portfolio/project2.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/project2.jpg">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="https://github.com/ianmartins/realtime-pipeline"><i class="fa fa-chain"></i></a><!-- Updated href with your project link -->
+                        <div class="project-info">
+                            <h4><a href="https://github.com/ianmartins/etl-pipeline-airflow" target="_blank">ETL Pipeline with Apache Airflow</a></h4>
+                            <p>Developed an automated ETL pipeline using Python and SQL to streamline data ingestion, transformation, and loading into a PostgreSQL database.</p>
+                            <div class="tech-icons">
+                                <i class="fab fa-python" title="Python"></i>
+                                <i class="fas fa-database" title="SQL"></i>
+                                <img src="img/icons/airflow.svg" alt="Apache Airflow" title="Apache Airflow">
+                                <i class="fas fa-database" title="PostgreSQL"></i>
                             </div>
-                            <img src="img/portfolio/02.jpg" class="img-responsive" alt="Real-Time Data Pipeline"> <!-- Updated alt text -->
                         </div>
                     </div>
-                </div><!-- end Works #2 col 3 -->
+                </div><!-- end Data Engineering Project -->
 
-                <!-- Add more portfolio items similarly -->
-                <!-- Example Portfolio Item #3 -->
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding apps"> <!-- Works #3 col 3 -->
-                    <div class="box">
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Financial Forecasting Model" href="img/portfolio/project3.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/project3.jpg">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="https://github.com/ianmartins/financial-forecasting"><i class="fa fa-chain"></i></a><!-- Updated href with your project link -->
+                <!-- Data Analytics Project Example -->
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 nopadding analytics">
+                    <div class="box"> 
+                        <div class="project-info">
+                            <h4><a href="https://github.com/ianmartins/sales-data-analysis" target="_blank">Sales Data Analysis with Tableau</a></h4>
+                            <p>Analyzed sales data to identify trends and patterns, creating interactive dashboards for stakeholders to monitor key performance indicators.</p>
+                            <div class="tech-icons">
+                                <i class="fab fa-tableau" title="Tableau"></i>
+                                <i class="fab fa-python" title="Python"></i>
+                                <i class="fas fa-database" title="SQL"></i>
                             </div>
-                            <img src="img/portfolio/03.jpg" class="img-responsive" alt="Financial Forecasting Model"> <!-- Updated alt text -->
                         </div>
                     </div>
-                </div><!-- end Works #3 col 3 -->
+                </div><!-- end Data Analytics Project -->
 
-                <!-- Example Portfolio Item #4 -->
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding others"> <!-- Works #4 col 3 -->
-                    <div class="box">
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Data Governance Framework" href="img/portfolio/project4.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/project4.jpg">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="https://github.com/ianmartins/data-governance"><i class="fa fa-chain"></i></a><!-- Updated href with your project link -->
+                <!-- Machine Learning Project Example -->
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 nopadding machine">
+                    <div class="box"> 
+                        <div class="project-info">
+                            <h4><a href="https://github.com/ianmartins/predictive-maintenance" target="_blank">Predictive Maintenance Model</a></h4>
+                            <p>Built a machine learning model using Python to predict equipment failures, enabling proactive maintenance and reducing downtime.</p>
+                            <div class="tech-icons">
+                                <i class="fab fa-python" title="Python"></i>
+                                <i class="fas fa-chart-line" title="scikit-learn"></i>
+                                <i class="fas fa-database" title="Pandas"></i>
                             </div>
-                            <img src="img/portfolio/04.jpg" class="img-responsive" alt="Data Governance Framework"> <!-- Updated alt text -->
                         </div>
                     </div>
-                </div> <!-- end Works #4 col 3 -->
+                </div><!-- end Machine Learning Project -->
 
-                <!-- Continue updating the remaining portfolio items similarly -->
 
             </div> <!-- End Row -->
 
