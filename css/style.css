@@ -1246,7 +1246,7 @@ ul.meta-tags li:last-child:after { content: ' ' }
     transition: background-color 0.5s, transform 0.3s;
 }
 
-.media-right:heading i.fa {
+.media-heading:hover i.fa {
     background-color: #267CA5; /* Darker shade on hover */
     transform: scale(1.1); /* Slight zoom effect */
 }
