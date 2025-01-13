@@ -808,7 +808,7 @@ ul.cat li a.active {
 .experience i.fa {
     text-align: center;
     font-size: 30px;
-    background-color: #333;
+    background-color: #38a5db;
     color: #ffffff;
     padding: 25px 0;
     border-top-left-radius: 0;
@@ -818,6 +818,12 @@ ul.cat li a.active {
     height: 90px;
     transition: background-color 0.5s;
 }
+
+.experience:hover i.fa {
+    background-color: #267CA5;
+    transform: scale(1.1);
+}
+
 #experience .gray-bg { position: relative }
 .gray-bg .vline {
     position: absolute;
