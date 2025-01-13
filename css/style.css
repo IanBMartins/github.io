@@ -1217,54 +1217,6 @@ ul.meta-tags li:last-child:after { content: ' ' }
 .tech-icons img:hover {
     opacity: 0.8;
 }
-.media-right i.fa {
-    text-align: center;
-    font-size: 30px;
-    background-color: #38a5db; /* Matches your blue theme */
-    color: #ffffff;
-    padding: 25px 0;
-    border-radius: 10px;
-    width: 82px;
-    height: 80px;
-    transition: background-color 0.5s, transform 0.3s;
-}
-
-.media-right:hover i.fa {
-    background-color: #267CA5; /* Darker shade on hover */
-    transform: scale(1.1); /* Slight zoom effect */
-}
-.media-left i.fa {
-    text-align: center;
-    font-size: 30px;
-    background-color: #38a5db; /* Matches your blue theme */
-    color: #ffffff;
-    padding: 25px 0;
-    border-radius: 10px;
-    width: 82px;
-    height: 80px;
-    transition: background-color 0.5s, transform 0.3s;
-}
-
-.media-left:hover i.fa {
-    background-color: #267CA5; /* Darker shade on hover */
-    transform: scale(1.1); /* Slight zoom effect */
-}
-.media-middle i.fa {
-    text-align: center;
-    font-size: 30px;
-    background-color: #38a5db; /* Matches your blue theme */
-    color: #ffffff;
-    padding: 25px 0;
-    border-radius: 10px;
-    width: 82px;
-    height: 80px;
-    transition: background-color 0.5s, transform 0.3s;
-}
-
-.media-middle:hover i.fa {
-    background-color: #267CA5; /* Darker shade on hover */
-    transform: scale(1.1); /* Slight zoom effect */
-}
 
 /* Responsive Adjustments */
 @media (max-width: 767px) {
