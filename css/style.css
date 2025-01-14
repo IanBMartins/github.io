@@ -34,7 +34,7 @@ a:focus {
     text-decoration: none;
     color: #ffcc33;
 }
-.highlight { color: #0D161F;}
+.highlight { color: #fcfcfc;}
 .clearfix:after {
     visibility: hidden;
     display: block;
@@ -130,7 +130,8 @@ a.goto-btn {
     transition: all 0.5s;
 }
 a.goto-btn:hover {
-    color: #FEFFFF;
+    color: #0D161F;
+    background-color: #FEFFFF;
     border-bottom: 2px solid #294661;
 }
 /* Home Section Style 2 - With Video*/
@@ -619,8 +620,8 @@ ul.cat li a {
 ul.cat li a:hover,
 ul.cat li a:focus,
 ul.cat li a.active {
-    background: #294661;
-    border: 1px solid #294661;
+    background: #0D161F;
+    border: 1px solid #0D161F;
     padding: 10px 16px;
     border-radius: 0;
     color: #fff;
