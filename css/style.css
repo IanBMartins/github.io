@@ -799,7 +799,10 @@ ul.cat li a.active {
 }
 .work-related-thumb .img-thumbnail:hover { opacity: 0.8 }
 /* experience Section */
-#experience { padding: 60px 0 }
+#experience {
+    background: #294661;
+    color:#fff;
+    padding:80px 0}
 .experience i.fa {
     text-align: center;
     font-size: 30px;
@@ -941,6 +944,22 @@ ul.metas li a { color: #294661 }
     border-radius: 3px;
     padding: 2px;
 }
+
+/* Education Section*/
+/*********************************/
+
+#education {
+    padding: 60px 0 ;
+    background-color: #fff;}
+
+/* Education Section*/
+/*********************************/
+
+#certifications {
+    background: #294661;
+    color:#fff;
+    padding:80px 0}
+
 /* Contact Section */
 /*********************************
 /* Map Section
