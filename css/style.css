@@ -49,7 +49,7 @@ a:focus {
 /* Navigation */
 #menu {
     margin-bottom: 0;
-    background-color: #0D161F;
+    background-color: #192B3B;
     padding: 10px 0;
     height: auto;
     border: 0px;
@@ -131,7 +131,7 @@ a.goto-btn {
 }
 a.goto-btn:hover {
     color: #FEFFFF;
-    border-bottom: 2px solid #0D161F;
+    border-bottom: 2px solid #192B3B;
 }
 /* Home Section Style 2 - With Video*/
 #home.video .overlay {
@@ -198,7 +198,7 @@ a.goto-btn:hover {
     width: 14px;
     height: 14px;
     margin: 0;
-    background-color: #0D161F;
+    background-color: #192B3B;
 }
 .carousel-fade .carousel-inner .item {
     opacity: 0;
@@ -272,7 +272,7 @@ a.goto-btn { margin-right: 30px ; border: #fff 1px solid; padding: 12px 18px; co
 }
 /* Intro Section */
 #intro {
-    background-color: #0D161F;
+    background-color: #192B3B;
     padding: 5% 0;
     color: #ffffff;
     text-align: center;
@@ -321,7 +321,7 @@ a.goto-btn { margin-right: 30px ; border: #fff 1px solid; padding: 12px 18px; co
 .service .media-right i.fa {
     text-align: center;
     font-size: 30px;
-    background-color: #0D161F;
+    background-color: #192B3B;
     color: #ffffff;
     padding: 25px 0;
     border-radius: 0;
@@ -339,7 +339,7 @@ a.goto-btn { margin-right: 30px ; border: #fff 1px solid; padding: 12px 18px; co
 .service .media-left i.fa {
     text-align: center;
     font-size: 30px;
-    background-color: #0D161F;
+    background-color: #192B3B;
     color: #ffffff;
     padding: 25px 0;
     border-radius: 0;
@@ -369,7 +369,7 @@ h4.media-heading {
 }
 /* About Us */
 #about {
-    background: #0D161F;
+    background: #192B3B;
     color:#fff;
     padding:80px 0;
 }
@@ -602,7 +602,7 @@ ul.social li a.fa:hover { background-color: #333333 }
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
     color: #fff;
-    background-color: #0D161F;
+    background-color: #192B3B;
     padding: 25px;
 }
 .nav-pills > li > a { border-radius: 0;}
@@ -619,14 +619,14 @@ ul.features li span.fa {
 ul.cat { margin: 30px 0 }
 ul.cat li a {
     background: inherit;
-    border: 1px solid #0D161F;
+    border: 1px solid #192B3B;
     padding: 10px 16px;
 }
 ul.cat li a:hover,
 ul.cat li a:focus,
 ul.cat li a.active {
-    background: #0D161F;
-    border: 1px solid #0D161F;
+    background: #192B3B;
+    border: 1px solid #192B3B;
     padding: 10px 16px;
     border-radius: 0;
     color: #fff;
@@ -651,7 +651,7 @@ ul.cat li a.active {
 }
 .box .hover-text i.fa {
     font-size: 20px;
-    background: #0D161F;
+    background: #192B3B;
     padding: 13px;
     position: relative;
     top: 40%;
@@ -808,7 +808,7 @@ ul.cat li a.active {
 .experience i.fa {
     text-align: center;
     font-size: 30px;
-    background-color: #0D161F;
+    background-color: #192B3B;
     color: #ffffff;
     padding: 25px 0;
     border-top-left-radius: 0;
@@ -895,7 +895,7 @@ ul.cat li a.active {
     word-spacing: 2px;
     font-weight: 700;
     padding: 10px 20px;
-    background-color: #0D161F;
+    background-color: #192B3B;
     text-transform: uppercase;
     border-color: #333333;
     transition: all 0.5s;
@@ -909,13 +909,13 @@ ul.cat li a.active {
     border-color: #ffcc33;
 }
 .color {
-    background-color: #0D161F;
-    border-color: #0D161F;
+    background-color: #192B3B;
+    border-color: #192B3B;
 }
 .color:focus,
 .color:hover {
     border-color: #333333;
-    background-color: #0D161F;
+    background-color: #192B3B;
 }
 /* Blog Section */
 #blog,
@@ -945,7 +945,7 @@ ul.metas li:after {
     margin-left: 3px;
 }
 ul.metas li:last-child:after { content: ' ' }
-ul.metas li a { color: #0D161F }
+ul.metas li a { color: #192B3B }
 .meta-detail {
     background: #f4f4f4;
     border-radius: 3px;
@@ -968,7 +968,7 @@ ul.metas li a { color: #0D161F }
 .contact-detail i.fa {
     text-align: center;
     font-size: 30px;
-    background-color: #0D161F;
+    background-color: #192B3B;
     color: #FFFFFF;
     padding: 25px 0;
     border-radius: 10px;
@@ -1191,7 +1191,7 @@ ul.meta-tags li:last-child:after { content: ' ' }
 }
 
 .project-info h4 a:hover {
-    color: #0D161F;
+    color: #192B3B;
 }
 
 .project-info p {
@@ -1216,7 +1216,7 @@ ul.meta-tags li:last-child:after { content: ' ' }
 }
 
 .tech-icons i:hover {
-    color: #0D161F; /* Change to desired hover color */
+    color: #192B3B; /* Change to desired hover color */
 }
 
 .tech-icons img {
