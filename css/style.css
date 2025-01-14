@@ -34,7 +34,7 @@ a:focus {
     text-decoration: none;
     color: #ffcc33;
 }
-.highlight { color: #fcfcfc;}
+.highlight { color: #0D161F;}
 .clearfix:after {
     visibility: hidden;
     display: block;
@@ -348,8 +348,8 @@ a.goto-btn { margin-right: 30px ; border: #fff 1px solid; padding: 12px 18px; co
     height: 80px;
     transition: background-color 0.5s;
 }
-.experience:hover i.fa,
-.service:hover i.fa { background-color: #333333 }
+
+
 h4.media-heading {
     margin-top: 0;
     margin-bottom: 5px;
@@ -620,8 +620,8 @@ ul.cat li a {
 ul.cat li a:hover,
 ul.cat li a:focus,
 ul.cat li a.active {
-    background: #0D161F;
-    border: 1px solid #0D161F;
+    background: #294661;
+    border: 1px solid #294661;
     padding: 10px 16px;
     border-radius: 0;
     color: #fff;
